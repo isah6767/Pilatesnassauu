@@ -1,0 +1,481 @@
+body {
+    margin: 0;
+
+    background: rgb(255, 255, 255);
+}
+
+.search-box {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    background: rgb(4, 14, 10);
+    height: 40px;
+    padding: 10px;
+    border-radius: 40px
+}
+.banner {
+    width: 100vw;
+    height: 60vh;
+    background: url(/img/img.img/mulher-adulta-praticando-ioga-em-casa\ \(1\).png) no-repeat center #fff;
+    background-size: cover;
+}
+.banner strong{
+    font-size: 40px;
+    color: gray;
+    margin: 10px;
+}
+.main-card img {
+    height: 40%;
+    width: 100%;
+    position: absolute;
+}
+
+.main-card {
+    background: #fff; 
+    width: 100vw;
+    height: 60vh;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    line-height: 40px;
+    width: 0;
+    transition: .3s;
+}
+
+.search-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box:hover>.search-txt {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.textoPrincipal {
+    font-size: 16px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.navbar {
+    background: linear-gradient(rgb(255, 255, 255), #0ce1bd);
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin: 5px;
+
+
+}
+
+.navbar a:hover {
+    background-color: #82ff7e;
+    color: rgb(255, 255, 255);
+
+}
+
+/* Estilos para tornar o navbar responsivo */
+@media screen and (max-width: 600px) {
+    .navbar a {
+        float: none;
+        display: block;
+        text-align: left;
+
+    }
+
+    .navbar {
+        text-align: center;
+    }
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 20%;
+    /* Define a largura dos cards */
+    height: 700px;
+    margin: 30px;
+    /* Espaçamento entre os cards */
+    float: left;
+    /* Faz com que os cards fiquem lado a lado */
+    border: 2px solid rgb(111, 189, 222);
+    border-radius: 10px;
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Estilo para o conteúdo dos cards */
+.card-content {
+    padding: 16px;
+}
+
+
+
+
+/* Estilo para o título dos cards */
+.card-title {
+    font-size: 24px;
+}
+
+/* Estilo para os cards quando o mouse passa por cima */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para telas pequenas */
+@media screen and (max-width: 600px) {
+    .card {
+        width: 100%;
+        /* Define a largura dos cards para ocupar toda a largura da tela */
+    }
+
+    .img {
+        border-radius: 20px;
+    }
+}
+
+.box {
+    width: 800px;
+    height: 800px;
+    border: 2px solid green;
+    margin: 100px;
+}
+
+.imagemCover {
+    background: url(/img/img.img/Mulher\ bonita.ti.png);
+    background-color: #e9dfdf;
+    color: #000;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        width: 100%;
+        /* Define a largura dos cards para ocupar toda a largura da tela */
+    }
+
+    .img {
+        border-radius: 20px;
+    }
+}
+
+
+table,
+td,
+tr {
+    border: 1px solid rgb(0, 0, 0);
+}
+
+div.blueTable {
+    border: 1px solid #1C6EA4;
+    background-color: #EEEEEE;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.divTable.blueTable .divTableCell,
+.divTable.blueTable .divTableHead {
+    border: 1px solid #AAAAAA;
+    padding: 3px 2px;
+}
+
+.divTable.blueTable .divTableBody .divTableCell {
+    font-size: 13px;
+}
+
+.divTable.blueTable .divTableRow:nth-child(even) {
+    background: #D0E4F5;
+}
+
+.divTable.blueTable .divTableHeading {
+    background: #1C6EA4;
+    background: -moz-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+    background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+    background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+    border-bottom: 2px solid #444444;
+}
+
+.divTable.blueTable .divTableHeading .divTableHead {
+    font-size: 15px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border-left: 2px solid #D0E4F5;
+}
+
+.divTable.blueTable .divTableHeading .divTableHead:first-child {
+    border-left: none;
+}
+
+.blueTable .tableFootStyle {
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: #D0E4F5;
+    background: -moz-linear-gradient(top, #8a8c8d 0%, #7c7f82 66%, #D0E4F5 100%);
+    background: -webkit-linear-gradient(top, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+    background: linear-gradient(to bottom, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+    border-top: 2px solid #444444;
+}
+
+.blueTable .tableFootStyle {
+    font-size: 14px;
+}
+
+.blueTable .tableFootStyle .links {
+    text-align: right;
+}
+
+.blueTable .tableFootStyle .links a {
+    display: inline-block;
+    background: #757a7e;
+    color: #FFFFFF;
+    padding: 2px 8px;
+    border-radius: 5px;
+}
+
+.blueTable.outerTableFooter {
+    border-top: none;
+}
+
+.blueTable.outerTableFooter .tableFootStyle {
+    padding: 3px 5px;
+}
+
+/* DivTable.com */
+.divTable {
+    display: table;
+
+    max-width:600px; 
+    height:auto; 
+    float:none; 
+    margin:auto; 
+    padding:1em; 
+    margin-bottom:1em; 
+    border-radius:6px; 
+    background:#efefef; 
+    box-shadow: 1px 0px 1.2px 0px #ccc; 
+    position:relative; 
+    margin-top: 10px;
+}
+
+.divTableRow {
+    display: table-row;
+}
+
+.divTableHeading {
+    display: table-header-group;
+}
+
+.divTableCell,
+.divTableHead {
+    display: table-cell;
+}
+
+.divTableHeading {
+    display: table-header-group;
+}
+
+.divTableFoot {
+    display: table-footer-group;
+}
+
+.divTableBody {
+    display: table-row-group;
+}
+
+footer {
+    width: 100%;
+    color: rgb(0, 0, 0);
+
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+#footer_content {
+    background-color: rgba(255, 249, 249, 0.974);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer_contacts h1 {
+    margin-bottom: 0.75rem;
+}
+
+#footer_social_media {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#footer_social_media .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: rgb(3, 3, 3);
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+#footer_social_media .footer-link i {
+    font-size: 1.25rem;
+}
+
+#footer_social_media .footer-link:hover {
+    opacity: 0.8;
+}
+
+#instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook {
+    background-color: #4267b3;
+}
+
+#whatsapp {
+    background-color: #25d366;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footer-list .footer-link {
+    color: rgb(27, 255, 72);
+    transition: all 0.4s;
+}
+
+.footer-list .footer-link:hover {
+    color: #7f37c9;
+}
+
+#footer_copyright {
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    background-color: rgb(46, 255, 224);
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
+.formularioContato { 
+    max-width:600px; 
+    height:auto; 
+    float:none; 
+    margin:auto; 
+    padding:1em; 
+    margin-bottom:1em; 
+    border-radius:6px; 
+    background:#efefef; 
+    box-shadow: 1px 0px 1.2px 0px #ccc; 
+    position:relative; 
+    margin-top: 10px;
+}
+/* .formularioContato:before { 
+    width:0; 
+    height:0; 
+    border:15px solid transparent; 
+    border-bottom-color:#fff; 
+    content:""; 
+    position:absolute; 
+    left:6%; 
+    top:-4.5%; 
+    margin-top:-4px; 
+    margin-left:6px; 
+    z-index:2;
+} */
+.formularioContato label  { 
+    float:left; 
+    width:100%; 
+    margin-bottom:0.8em; 
+}
+.formularioContato label span {
+    width: 100%;
+    float: left;
+    color: #999;
+    /* margin-bottom: 6px; */
+    font-family:'open_sansregular'; 
+}
+.formularioContato label input  { 
+    font-size:1em; 
+    color:#555; 
+    font-family:'open_sansregular'; 
+    outline:none; 
+    border:1px #dee5ed solid; 
+    border-radius:4px; 
+    padding:0.6em; 
+    transition: 0.3s;  
+}
+.formularioContato label select { 
+    font-size:1em; 
+    color:#555; 
+    border:1px #dee5ed solid; 
+    border-radius:4px; 
+    padding:0.6em; 
+    outline:none; 
+    transition: 0.3s;  
+}
+.formularioContato label textarea { 
+    font-size:1em; 
+    color:#555; 
+    border:1px #dee5ed solid; 
+    border-radius:4px; 
+    padding:0.6em; 
+    outline:none;
+    transition: 0.3s;   
+}
+.formularioContato label input:focus    { box-shadow:0 0 5px 0px rgb(178,216,231); border:1px rgb(37,174,230) solid; color:rgb(37,174,230);}
+.formularioContato label select:focus   { box-shadow:0 0 5px 0px rgb(178,216,231); border:1px rgb(37,174,230) solid; }
+.formularioContato label textarea:focus { box-shadow:0 0 5px 0px rgb(178,216,231); border:1px rgb(37,174,230) solid; color:rgb(37,174,230);}
+.formularioContato button.btn-envia { 
+    background-color:rgb(37,174,230); 
+    width:25%; display:block; 
+    margin:auto; cursor:pointer; 
+    border-radius:4px;  
+    border:0; 
+    padding:0.8em 0em; 
+    color:#fff; 
+    font-size:1.3em; 
+    font-family:'open_sansbold'; 
+    text-align: center;
+    transition: 0.3s;   
+}
+.formularioContato button.btn-envia:hover { 
+    background-color:#333; 
+}
